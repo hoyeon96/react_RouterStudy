@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Posts from '../pages/Posts';
 import MyPage from '../pages/MyPage';
 import Login from '../pages/Login';
+import Search from '../pages/Search';
 
 import Header from '../components/Header';
 
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route path="/posts" component={Posts} />
                     <Route path="/login" component={Login} />
                     <Route path="/me" component={MyPage} />
+                    <Route path="/search" component={Search} />
                 </div>
             </Router>
                 

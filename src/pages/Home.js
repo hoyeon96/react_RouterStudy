@@ -1,14 +1,11 @@
 import React from 'react';
 
-import { Redirect } from 'react-router-dom';
-
-const logged = false; 
-
-const Home = () => {
+const Home = ({history}) => {
     return (
         <div>
             <h2>
                 Home
+                <button onClick={()=>history.push('./posts')}>버어튼</button>
             </h2>
         </div>
     );
