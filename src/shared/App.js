@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route ,Switch } from 'react-router-dom';
 import About from '../pages/About';
 import Home from '../pages/Home';
 import Posts from '../pages/Posts';
+import MyPage from '../pages/MyPage';
+import Login from '../pages/Login';
 
 import Header from '../components/Header';
 
@@ -18,8 +20,10 @@ class App extends Component {
                         <Route path="/about/:name" component={About} />
                         <Route path="/about " component={About} />
                         {/* /about을 위에 작성했더니 name 입력해도 안나타남 */}
-                        <Route path="/posts" component={Posts} />
                     </Switch>
+                    <Route path="/posts" component={Posts} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/me" component={MyPage} />
                 </div>
             </Router>
                 
