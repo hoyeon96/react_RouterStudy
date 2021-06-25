@@ -7,6 +7,7 @@ const Header = () => {
         <div className="header">
             <Link to="/" className="item">홈</Link>
             <Link to="/about/hoyeon" className="item">소개</Link>
+            <Link to="/Posts" className="item">포스트</Link>
         </div>
     );
 };
